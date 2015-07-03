@@ -1,13 +1,13 @@
 #!/usr/bin/perl -w
 
 # settings:
-# .swift files may be set as well
+# .swift files may be set as well, just set "swift" if needed
     my $sourceFileExtension = "m";
 
 # if set, the script will only check Localizable.strings files, otherwse all available .strings files
     my $stringsFileName = "Localizable.strings"; 
 
-# set if you are using macros wrapping NSLocalizedString
+# set if you are using shorthand macros wrapping NSLocalizedString, otherwise keep the default "_" value
     my $NSLocalizedStringMacros = "_"; 
 
 # the script recursively looks through all subdirectories
