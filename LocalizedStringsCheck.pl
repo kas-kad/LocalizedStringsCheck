@@ -66,7 +66,7 @@ my @stringsFiles = get_all_files("", $projectPath, $stringsFileName);
 my @allAvailableStrings;
 foreach my $i (@stringsFiles) {
     my $text = read_file($i);
-    while ($text =~ m {("(?:.*?)[^\\]")(?:\s)*=}g){
+    while ($text =~ m {(?:("(?:.*?)[^\\]")\s*=\s*".*?"\s*;)}g){
         my $string = $1;
         push @allAvailableStrings, $string;
     }
