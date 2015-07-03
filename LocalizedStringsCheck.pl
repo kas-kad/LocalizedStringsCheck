@@ -10,8 +10,8 @@
 # set if you are using macros wrapping NSLocalizedString
     my $NSLocalizedStringMacros = "_"; 
 
-# the script recursively look through all subdirectories
-    my $projectPath = "/Users/andreykadochnikov/Documents/XCODE PROJECTS/walletkeeper"; 
+# the script recursively looks through all subdirectories
+    my $projectPath = "/Users/username/Documents/ProjectName"; 
 
 
 use File::Slurp;
@@ -94,4 +94,3 @@ print "\n\n";
         print "    $string\n";
     }
 }
-=end
